@@ -1,0 +1,73 @@
+@import url("file:///home/hugo/.cache/wal/colors.css");
+body, html {
+  margin: 0;
+  padding: 0; }
+
+.background {
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  width: 120%;
+  height: 120%;
+  z-index: -1;
+  background-image: var(--wallpaper);
+  filter: blur(30px) brightness(50%); }
+
+.girl {
+  position: fixed;
+  bottom: 0px; }
+  @media screen and (max-width: 1000px) {
+    .girl {
+      display: none !important; } }
+  @media screen and (min-widht: 1000px) {
+    .girl {
+      display: block; } }
+  .girl p {
+    color: #FFF;
+    font-size: 30pt;
+    padding: 20px; }
+  .girl img {
+    height: 500px; }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+  .content #clock {
+    font-family: "Play", sans-serif;
+    font-size: 50pt;
+    margin-top: 50px;
+    padding: 10px;
+    border: solid 5px;
+    border-color: var(--color4);
+    color: #FFF; }
+  .content .links {
+    z-index: 1;
+    width: 570px;
+    height: 400px;
+    margin-top: 50px; }
+    .content .links ul {
+      border: solid 5px;
+      border-color: var(--color4);
+      padding: 0 !important;
+      display: flex;
+      flex-direction: row;
+      list-style: none; }
+      .content .links ul .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+      .content .links ul li {
+        background-color: rgba(100, 100, 100, 0.2);
+        padding: 60px; }
+        .content .links ul li:hover {
+          background-color: rgba(100, 100, 100, 0.4); }
+        .content .links ul li a {
+          padding: fill;
+          font-family: "Play", sans-serif;
+          font-size: 14pt;
+          color: #FFF;
+          text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
