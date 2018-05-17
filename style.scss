@@ -50,34 +50,28 @@ body, html{
 	.links {
 		z-index: 1;
 		width: 570px;
-		height: 400px;
+		height: 423px;
 		margin-top: 50px;
-		ul {
-			border: solid 5px;
-			border-color: var(--color4);
-			//height: 100%;
-			padding: 0 !important;
+		border: solid 5px;
+		border-color: var(--color4);
+		padding: 0 !important;
+		display: flex;
+		flex-direction: row;
+		.col {
 			display: flex;
-			flex-direction: row;
-			.col {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-around;
-			}
-			list-style: none;
-			li {
-					background-color: rgba(100,100,100,0.2);
-					padding: 60px;
-					&:hover {
-						background-color: rgba(100,100,100,0.4);
-					}
-				a{
-					padding: fill;
-					font-family: "Play", sans-serif;
-					font-size: 14pt;
-					color: #FFF;
-					text-decoration: none;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: space-around;
+			a {
+				padding: 60px;
+				background-color: rgba(100,100,100,0.2);
+				&:hover {
+					background-color: rgba(100,100,100,0.4);
 				}
+				font-family: "Play", sans-serif;
+				font-size: 14pt;
+				color: #FFF;
+				text-decoration: none;
 			}
 		}
 	}

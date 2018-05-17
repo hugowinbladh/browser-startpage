@@ -45,29 +45,26 @@ body, html {
   .content .links {
     z-index: 1;
     width: 570px;
-    height: 400px;
-    margin-top: 50px; }
-    .content .links ul {
-      border: solid 5px;
-      border-color: var(--color4);
-      padding: 0 !important;
+    height: 423px;
+    margin-top: 50px;
+    border: solid 5px;
+    border-color: var(--color4);
+    padding: 0 !important;
+    display: flex;
+    flex-direction: row; }
+    .content .links .col {
       display: flex;
-      flex-direction: row;
-      list-style: none; }
-      .content .links ul .col {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; }
-      .content .links ul li {
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around; }
+      .content .links .col a {
+        padding: 60px;
         background-color: rgba(100, 100, 100, 0.2);
-        padding: 60px; }
-        .content .links ul li:hover {
+        font-family: "Play", sans-serif;
+        font-size: 14pt;
+        color: #FFF;
+        text-decoration: none; }
+        .content .links .col a:hover {
           background-color: rgba(100, 100, 100, 0.4); }
-        .content .links ul li a {
-          padding: fill;
-          font-family: "Play", sans-serif;
-          font-size: 14pt;
-          color: #FFF;
-          text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
