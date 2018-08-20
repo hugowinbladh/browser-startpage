@@ -3,6 +3,9 @@ body, html {
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: Play;
+  src: url(Play-Regular.ttf); }
 .background {
   position: fixed;
   top: -50px;
@@ -35,7 +38,7 @@ body, html {
   justify-content: space-around;
   flex-direction: column; }
   .content #clock {
-    font-family: "Play", sans-serif;
+    font-family: Play, sans-serif;
     font-size: 50pt;
     margin-top: 50px;
     padding: 10px;
@@ -49,7 +52,7 @@ body, html {
     margin-top: 50px;
     border: solid 5px;
     border-color: var(--color4);
-    padding: 0 !important;
+    padding: 0;
     display: flex;
     flex-direction: row; }
     .content .links .col {
@@ -57,14 +60,34 @@ body, html {
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-around; }
-      .content .links .col a {
+      .content .links .col .link {
         padding: 60px;
         background-color: rgba(100, 100, 100, 0.2);
-        font-family: "Play", sans-serif;
+        font-family: Play, sans-serif;
         font-size: 14pt;
         color: #FFF;
         text-decoration: none; }
-        .content .links .col a:hover {
+        .content .links .col .link:hover {
           background-color: rgba(100, 100, 100, 0.4); }
+
+#fchan .sublink {
+  display: none; }
+#fchan:hover {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0;
+  height: 140px;
+  text-align: center; }
+  #fchan:hover #name {
+    display: none; }
+  #fchan:hover .sublink {
+    display: block;
+    padding: 25px 0;
+    font-family: Play, sans-serif;
+    font-size: 14pt;
+    color: #FFF;
+    text-decoration: none; }
+    #fchan:hover .sublink:hover {
+      background-color: rgba(100, 100, 100, 0.4); }
 
 /*# sourceMappingURL=style.css.map */
